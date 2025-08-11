@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ParkingSlot {
 
-    private Long slotId;
+    private long slotId;
 
     private String slotName;
 

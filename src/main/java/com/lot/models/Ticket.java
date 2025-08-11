@@ -16,7 +16,6 @@ public class Ticket {
 
     private String entryTime;
 
-    private P
 
     public long getTicketNumber() {
         return ticketNumber;

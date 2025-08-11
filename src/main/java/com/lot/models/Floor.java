@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Floor {
 
-    private Long id ;
+    private long id ;
     private String name;
     private String floorNumber;
     private List<ParkingSlot> parkingSlotList;

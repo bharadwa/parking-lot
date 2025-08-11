@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Bill {
 
-    private Long billId;
+    private long billId;
 
     private Ticket ticket;
 

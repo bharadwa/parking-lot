@@ -2,7 +2,7 @@ package com.lot.models;
 
 public class Operator {
 
-    private Long id;
+    private long id;
 
     private String name;
 
