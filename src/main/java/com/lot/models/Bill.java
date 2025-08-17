@@ -2,9 +2,7 @@ package com.lot.models;
 
 import java.util.Date;
 
-public class Bill {
-
-    private long billId;
+public class Bill extends BaseModel {
 
     private Ticket ticket;
 
@@ -22,14 +20,6 @@ public class Bill {
 
     public void setTicket(Ticket ticket) {
         this.ticket = ticket;
-    }
-
-    public Long getBillId() {
-        return billId;
-    }
-
-    public void setBillId(Long billId) {
-        this.billId = billId;
     }
 
     public Gate getGate() {

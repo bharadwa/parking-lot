@@ -2,20 +2,11 @@ package com.lot.models;
 
 import java.util.List;
 
-public class Floor {
+public class ParkingFloor extends  BaseModel{
 
-    private long id ;
     private String name;
     private String floorNumber;
     private List<ParkingSlot> parkingSlotList;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

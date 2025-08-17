@@ -1,20 +1,10 @@
 package com.lot.models;
 
-public class Operator {
-
-    private long id;
+public class Operator extends BaseModel {
 
     private String name;
 
     private String phoneNumber;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

@@ -2,17 +2,13 @@ package com.lot.models;
 
 import java.util.List;
 
-public class ParkingLot {
-
-    private long id ;
+public class ParkingLot extends BaseModel{
 
     private String name;
 
-    private Gate entryGate;
+    private List<Gate>gates;
 
-    private Gate exitGate;
-
-    private List<Floor> floors;
+    private List<ParkingFloor> floors;
 
     private String address;
 
@@ -24,35 +20,15 @@ public class ParkingLot {
         this.name = name;
     }
 
-    public Gate getEntryGate() {
-        return entryGate;
+    public List<Gate> getGates() {
+        return gates;
     }
 
-    public void setEntryGate(Gate entryGate) {
-        this.entryGate = entryGate;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public Gate getExitGate() {
-        return exitGate;
-    }
-
-    public void setExitGate(Gate exitGate) {
-        this.exitGate = exitGate;
-    }
-
-    public List<Floor> getFloors() {
+    public List<ParkingFloor> getFloors() {
         return floors;
     }
 
-    public void setFloors(List<Floor> floors) {
+    public void setFloors(List<ParkingFloor> floors) {
         this.floors = floors;
     }
 

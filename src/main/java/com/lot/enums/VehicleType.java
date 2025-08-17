@@ -1,6 +1,6 @@
 package com.lot.enums;
 
-public enum VehicleTypes {
+public enum VehicleType {
 
     CAR,
     BIKE,
