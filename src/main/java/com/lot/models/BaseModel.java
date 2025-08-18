@@ -6,6 +6,8 @@ import java.util.Date;
 public abstract class BaseModel {
 
     private long id;
+    private Date createdAt;
+    private Date updatedAt;
 
     public Date getCreatedAt() {
         return createdAt;
@@ -30,10 +32,5 @@ public abstract class BaseModel {
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
-
-    private Date createdAt;
-
-    private Date updatedAt;
-
 
 }

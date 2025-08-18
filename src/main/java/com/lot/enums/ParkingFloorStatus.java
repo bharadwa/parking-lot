@@ -1,10 +1,9 @@
 package com.lot.enums;
 
 public enum ParkingFloorStatus {
-    OPEN,
-    CLOSED,
+    OPERATIONAL,
     UNDER_MAINTENANCE,
-    FULL;
+    CLOSED;
 
     public static ParkingFloorStatus fromString(String status) {
         for (ParkingFloorStatus s : ParkingFloorStatus.values()) {

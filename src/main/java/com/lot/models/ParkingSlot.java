@@ -1,13 +1,12 @@
 package com.lot.models;
 
 import com.lot.enums.SlotStatus;
-import com.lot.enums.VehicleTypes;
-import java.util.List;
+import com.lot.enums.VehicleType;
 
 
-public class ParkingSlot {
+public class ParkingSlot extends BaseModel  {
 
-    private long slotId;
+    private String slotNumber;
 
     private String slotName;
 
@@ -15,14 +14,14 @@ public class ParkingSlot {
 
     private Vehicle vehicle;
 
-    private List<VehicleTypes> vehicleTypes;
+    private VehicleType supportedVehicleType;
 
-    public Long getSlotId() {
-        return slotId;
+    public String getSlotNumber() {
+        return slotNumber;
     }
 
-    public void setSlotId(Long slotId) {
-        this.slotId = slotId;
+    public void setSlotNumber(String slotNumber) {
+        this.slotNumber = slotNumber;
     }
 
     public String getSlotName() {
@@ -49,11 +48,12 @@ public class ParkingSlot {
         this.vehicle = vehicle;
     }
 
-    public List<VehicleTypes> getVehicleTypes() {
-        return vehicleTypes;
+    public VehicleType getSupportedVehicleType() {
+        return supportedVehicleType;
     }
 
-    public void setVehicleTypes(List<VehicleTypes> vehicleTypes) {
-        this.vehicleTypes = vehicleTypes;
+
+    public void setSupportedVehicleType(VehicleType supportedVehicleType) {
+        this.supportedVehicleType = supportedVehicleType;
     }
 }

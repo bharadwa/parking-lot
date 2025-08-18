@@ -1,6 +1,5 @@
 package com.lot.strategies;
 
-import com.lot.enums.SlotStatus;
 import com.lot.models.ParkingSlot;
 
 public class NearParkingStrategy implements ParkingStrategy {

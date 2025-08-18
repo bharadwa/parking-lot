@@ -24,6 +24,10 @@ public class ParkingLot extends BaseModel{
         return gates;
     }
 
+    public void setGates(List<Gate> gates) {
+        this.gates = gates;
+    }
+
     public List<ParkingFloor> getFloors() {
         return floors;
     }

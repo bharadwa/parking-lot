@@ -1,12 +1,12 @@
 package com.lot.services;
 
+import com.lot.enums.SlotStatus;
 import com.lot.enums.VehicleType;
 import com.lot.exceptions.InvalidParkingLotException;
 import com.lot.models.ParkingFloor;
 import com.lot.models.ParkingLot;
 import com.lot.repositories.ParkingLotRepository;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class ParkingLotServiceImpl implements  ParkingLotService{
@@ -48,7 +48,7 @@ public class ParkingLotServiceImpl implements  ParkingLotService{
         }
         for (VehicleType vehicleType : vehicleTypes) {
             int count = (int)parkingFloor.getParkingSlotList().stream()
-                    .filter(slot -> slot.getVehicleTypes().contains(vehicleType))
+                    .filter(slot -> slot.getSupportedVehicleType()==vehicleType&&slot.getStatus()== SlotStatus.AVAILABLE)
                     .count();
             capacityMap.put(vehicleType.name(), count);
         }

@@ -1,8 +1,8 @@
 package com.lot.models;
 
-public class Ticket {
+import java.util.Date;
 
-    private long ticketNumber ;
+public class Ticket extends  BaseModel{
 
     private String name;
 
@@ -14,16 +14,8 @@ public class Ticket {
 
     private Operator operator;
 
-    private String entryTime;
+    private Date entryTime;
 
-
-    public long getTicketNumber() {
-        return ticketNumber;
-    }
-
-    public void setTicketNumber(long ticketNumber) {
-        this.ticketNumber = ticketNumber;
-    }
 
     public String getName() {
         return name;
@@ -65,11 +57,11 @@ public class Ticket {
         this.operator = operator;
     }
 
-    public String getEntryTime() {
+    public Date getEntryTime() {
         return entryTime;
     }
 
-    public void setEntryTime(String entryTime) {
+    public void setEntryTime(Date entryTime) {
         this.entryTime = entryTime;
     }
 }

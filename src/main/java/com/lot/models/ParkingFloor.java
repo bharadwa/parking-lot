@@ -1,11 +1,16 @@
 package com.lot.models;
 
+import com.lot.enums.ParkingFloorStatus;
+
 import java.util.List;
 
-public class ParkingFloor extends  BaseModel{
+public class ParkingFloor extends BaseModel {
 
     private String name;
-    private String floorNumber;
+    private int floorNumber;
+
+    private ParkingFloorStatus status;
+
     private List<ParkingSlot> parkingSlotList;
 
     public String getName() {
@@ -16,12 +21,20 @@ public class ParkingFloor extends  BaseModel{
         this.name = name;
     }
 
-    public String getFloorNumber() {
+    public int getFloorNumber() {
         return floorNumber;
     }
 
-    public void setFloorNumber(String floorNumber) {
+    public void setFloorNumber(int floorNumber) {
         this.floorNumber = floorNumber;
+    }
+
+    public ParkingFloorStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ParkingFloorStatus status) {
+        this.status = status;
     }
 
     public List<ParkingSlot> getParkingSlotList() {

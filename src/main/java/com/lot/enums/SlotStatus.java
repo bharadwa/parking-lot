@@ -2,7 +2,7 @@ package com.lot.enums;
 
 public enum SlotStatus {
 
-    EMPTY,
+    AVAILABLE,
     OCCUPIED,
     RESERVED,
     MAINTENANCE;

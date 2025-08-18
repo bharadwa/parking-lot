@@ -15,4 +15,13 @@ public enum VehicleType {
     public String toString() {
         return name().toLowerCase().replace('_', ' ');
     }
+
+    public static VehicleType fromString(String type) {
+        for (VehicleType vehicleType : VehicleType.values()) {
+            if (vehicleType.name().equalsIgnoreCase(type)) {
+                return vehicleType;
+            }
+        }
+        throw new IllegalArgumentException("Unknown vehicle type: " + type);
+    }
 }

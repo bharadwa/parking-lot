@@ -1,24 +1,16 @@
 package com.lot.models;
 
-public class Vehicle {
+import com.lot.enums.VehicleType;
 
-    private long id;
+public class Vehicle extends BaseModel   {
 
     private String licenseNumber;
 
-    private String vehicleType;
+    private VehicleType vehicleType;
 
     private String color;
 
     private String ownerName;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getLicenseNumber() {
         return licenseNumber;
@@ -28,11 +20,11 @@ public class Vehicle {
         this.licenseNumber = licenseNumber;
     }
 
-    public String getVehicleType() {
+    public VehicleType getVehicleType() {
         return vehicleType;
     }
 
-    public void setVehicleType(String vehicleType) {
+    public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
     }
 
